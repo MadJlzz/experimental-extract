@@ -1,0 +1,9 @@
+application:
+  engines:
+    sftp:
+      caceis:
+        hostname: "sftp.caceis.com"
+        user: "caceis"
+    crawler:
+      hfrx:
+        url: "https://www.hedgefundresearch.com/sites/default/files/index_data/hfrx_daily_index_data.csv"
