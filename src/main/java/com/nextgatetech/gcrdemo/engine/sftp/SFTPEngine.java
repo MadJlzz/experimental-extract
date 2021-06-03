@@ -21,8 +21,9 @@ public class SFTPEngine implements Engine {
     }
 
     @Override
-    public void extract() {
+    public byte[] extract() {
         logger.info("Running extraction from SftpServiceImpl");
+        return new byte[1];
     }
 
 }
