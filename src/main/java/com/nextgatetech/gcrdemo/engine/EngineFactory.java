@@ -1,10 +1,10 @@
-package com.nextgatetech.gcrdemo.service;
+package com.nextgatetech.gcrdemo.engine;
 
 import com.nextgatetech.gcrdemo.configuration.CrawlerEngineProps;
 import com.nextgatetech.gcrdemo.configuration.EngineProps;
 import com.nextgatetech.gcrdemo.configuration.SFTPEngineProps;
-import com.nextgatetech.gcrdemo.service.crawler.CrawlerEngine;
-import com.nextgatetech.gcrdemo.service.sftp.SFTPEngine;
+import com.nextgatetech.gcrdemo.engine.crawler.CrawlerEngine;
+import com.nextgatetech.gcrdemo.engine.sftp.SFTPEngine;
 
 import java.util.Optional;
 

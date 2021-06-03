@@ -1,6 +1,6 @@
-package com.nextgatetech.gcrdemo.service.crawler;
+package com.nextgatetech.gcrdemo.engine.crawler;
 
-import com.nextgatetech.gcrdemo.service.Engine;
+import com.nextgatetech.gcrdemo.engine.Engine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

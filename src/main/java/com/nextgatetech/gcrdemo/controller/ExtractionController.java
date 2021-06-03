@@ -1,10 +1,6 @@
 package com.nextgatetech.gcrdemo.controller;
 
-import com.nextgatetech.gcrdemo.configuration.EngineProps;
-import com.nextgatetech.gcrdemo.configuration.SFTPEngineProps;
-import com.nextgatetech.gcrdemo.service.Engine;
-import com.nextgatetech.gcrdemo.service.EngineFactory;
-import com.nextgatetech.gcrdemo.service.EngineType;
+import com.nextgatetech.gcrdemo.engine.EngineType;
 import com.nextgatetech.gcrdemo.service.ExtractionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
