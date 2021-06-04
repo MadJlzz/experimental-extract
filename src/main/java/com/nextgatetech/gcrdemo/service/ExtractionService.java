@@ -4,9 +4,12 @@ import com.nextgatetech.gcrdemo.configuration.EngineProps;
 import com.nextgatetech.gcrdemo.engine.Engine;
 import com.nextgatetech.gcrdemo.engine.EngineFactory;
 import com.nextgatetech.gcrdemo.engine.EngineType;
+import com.nextgatetech.gcrdemo.engine.ExtractionResult;
 import com.nextgatetech.gcrdemo.storage.Storage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ExtractionService {
@@ -23,8 +26,10 @@ public class ExtractionService {
 
     public void extract(final EngineType engineType, final String client) {
         final Engine engine = this.engineFactory.getEngine(engineType, client);
-        final byte[] data = engine.extract();
-        this.storage.store(data);
+        final List<ExtractionResult> results = engine.extract();
+        for (final ExtractionResult result : results) {
+            this.storage.store(result);
+        }
     }
 
 }

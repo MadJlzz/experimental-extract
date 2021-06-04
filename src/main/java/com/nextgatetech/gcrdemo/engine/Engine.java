@@ -1,7 +1,9 @@
 package com.nextgatetech.gcrdemo.engine;
 
+import java.util.List;
+
 public interface Engine {
 
-    byte[] extract();
+    List<ExtractionResult> extract();
 
 }

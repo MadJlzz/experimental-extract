@@ -1,8 +1,12 @@
 package com.nextgatetech.gcrdemo.engine.sftp;
 
 import com.nextgatetech.gcrdemo.engine.Engine;
+import com.nextgatetech.gcrdemo.engine.ExtractionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Collections;
+import java.util.List;
 
 public class SFTPEngine implements Engine {
 
@@ -21,9 +25,9 @@ public class SFTPEngine implements Engine {
     }
 
     @Override
-    public byte[] extract() {
+    public List<ExtractionResult> extract() {
         logger.info("Running extraction from SftpServiceImpl");
-        return new byte[1];
+        return Collections.emptyList();
     }
 
 }
